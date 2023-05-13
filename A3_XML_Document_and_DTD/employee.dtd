@@ -1,0 +1,7 @@
+<!DOCTYPE Person[
+<!ELEMENT Person (Employee+)>
+<!ELEMENT Employee (EmpId,EmpName,Department)>
+<!ELEMENT EmpId (#PCDATA)>
+<!ELEMENT EmpName (#PCDATA)>
+<!ELEMENT Department (#PCDATA)>
+]> 

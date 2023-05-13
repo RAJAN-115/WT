@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Registration and Login Form</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+	<script>
+		var app = angular.module('myApp', []);
+		
+		app.controller('myCtrl', function($scope) {
+			$scope.register = function() {
+				// register code here
+			}
+			
+			$scope.login = function() {
+				// login code here
+			}
+		});
+	</script>
+</head>
+<body ng-controller="myCtrl">
+	<h1>Registration Form</h1>
+	<form>
+		<label>First Name:</label>
+		<input type="text" ng-model="firstName" required>
+		
+		<label>Last Name:</label>
+		<input type="text" ng-model="lastName" required>
+		
+		<label>Username:</label>
+		<input type="text" ng-model="username" required>
+		
+		<label>Password:</label>
+		<input type="password" ng-model="password" required>
+		
+		<button ng-click="register()">Register</button>
+	</form>
+	
+	<h1>Login Form</h1>
+	<form>
+		<label>Username:</label>
+		<input type="text" ng-model="username" required>
+		
+		<label>Password:</label>
+		<input type="password" ng-model="password" required>
+		
+		<button ng-click="login()">Login</button>
+	</form>
+</body>
+</html>

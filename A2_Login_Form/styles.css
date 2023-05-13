@@ -1,0 +1,40 @@
+
+body{
+    background-image: url("college.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* text-align: center; */
+}
+fieldset{
+    border: 5px;
+    border-style: groove;
+    width: 30%;
+    margin: auto;
+    background-color: lightgray;
+}
+input[type=text]{
+    width: 100%;
+    height: 25px;
+}
+input[type=email]{
+    width: 100%;
+    height: 25px;
+}
+input[type=number]{
+    width: 100%;
+    height: 25px;
+}
+input[type=date]{
+    width: 100%;
+    height: 25px;
+}
+input:focus{
+    background-color: lightslategray;
+    color: white;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}

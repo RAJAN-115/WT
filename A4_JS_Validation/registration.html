@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js"></script>
+    
+    
+    
+  </head>
+  
+  <body>
+    <h1>Registration Form</h1>
+    <form name="myForm" onsubmit="return validateForm()" method="POST" action="/submit">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName"><br><br>
+      
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName"><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      
+      
+      <input type="submit" value="submit" onclick="validateForm()">
+    </form>
+  </body>
+</html>
